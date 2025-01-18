@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Conversor de Monedas
 
 ## Descripción
@@ -97,6 +98,10 @@ Este proyecto se distribuye bajo la licencia MIT. Puedes usarlo, modificarlo y d
 ---
 **Desarrollado con ❤ en Java.**
 
+=======
+# conversor_de_moneda
+Conversor de monedas de Alura
+>>>>>>> f12f5083c605f58dbeefa2e568cd81d0613d2926
 =======
 # conversor_de_moneda
 Conversor de monedas de Alura
