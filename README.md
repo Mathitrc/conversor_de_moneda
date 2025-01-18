@@ -1,51 +1,58 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Conversor de Monedas
 
-## Descripción
-Este proyecto es un **conversor de monedas** interactivo desarrollado en Java. Permite realizar conversiones entre diferentes monedas utilizando tasas de cambio obtenidas de una API externa. El usuario puede seleccionar la conversión deseada, ingresar la cantidad a convertir y recibir el resultado en tiempo real.
+Este es un **Conversor de Monedas** que permite convertir entre diferentes monedas como el Dólar, Peso Chileno, Peso Argentino y Peso Colombiano. El proyecto hace uso de una API externa para obtener las tasas de cambio y realizar las conversiones.
 
-## Características
-- Menú interactivo con varias opciones de conversión.
-- Soporte para las siguientes monedas:
-  - Dólar (USD)
-  - Peso Argentino (ARS)
-  - Real Brasileño (BRL)
-  - Peso Colombiano (COP)
-- Llamadas dinámicas a una API para obtener tasas de cambio actualizadas.
-- Validación de entradas del usuario.
-- Manejo de errores en la conexión a la API.
+## Funcionalidades
 
-## Estructura del Proyecto
-El proyecto está compuesto por las siguientes clases:
+- Conversión entre **Dólar (USD)**, **Peso Chileno (CLP)**, **Peso Argentino (ARS)** y **Peso Colombiano (COP)**.
+- Entrada de cantidad a convertir desde la consola.
+- Muestra la tasa de cambio y la cantidad convertida en la moneda de destino.
 
-### 1. `Main`
-Contiene la lógica principal del programa:
-- Presenta el menú al usuario.
-- Solicita la cantidad a convertir.
-- Realiza la conversión llamando a la clase `ConsumoApi`.
-- Muestra los resultados al usuario.
+## Tecnologías utilizadas
 
-### 2. `ConsumoApi`
-Se encarga de realizar las solicitudes a la API externa para obtener las tasas de cambio:
-- Método principal: `getExchangeRate(String monedaBase, String monedaDestino)`
+- **Java**: El lenguaje de programación principal.
+- **API de tasas de cambio**: Se hace uso de una API externa para obtener las tasas de conversión entre diferentes monedas.
+- **Scanner**: Para la lectura de entradas del usuario desde la consola.
 
 ## Requisitos
-- Java Development Kit (JDK) 8 o superior.
-- Acceso a internet para conectar con la API de tasas de cambio.
-- IDE o editor de texto para ejecutar y editar el código (e.g., IntelliJ IDEA, Eclipse, Visual Studio Code).
 
-## Instalación y Ejecución
-1. Clona este repositorio en tu máquina local:
-   ```bash
-   git clone <URL_DEL_REPOSITORIO>
-   ```
+Para poder usar este proyecto, necesitas tener instalado lo siguiente:
 
-2. Abre el proyecto en tu IDE favorito.
+- **Java 11 o superior**: Asegúrate de tener una versión compatible de Java instalada en tu máquina.
 
-3. Asegúrate de tener configurada la clase `ConsumoApi` con la URL correcta de la API y cualquier clave de acceso necesaria.
+## Instalación
 
-4. Ejecuta la clase `Main`.
+1. **Clona el repositorio** a tu máquina local:
+
+    ```bash
+    git clone https://github.com/usuario/conversor-de-moneda.git
+    ```
+
+2. **Compila el proyecto**:
+
+    Abre una terminal en la carpeta del proyecto y ejecuta el siguiente comando:
+
+    ```bash
+    javac Main.java
+    ```
+
+3. **Ejecuta el proyecto**:
+
+    Después de compilar, ejecuta el proyecto con el siguiente comando:
+
+    ```bash
+    java Main
+    ```
+
+4. **Interactúa con el conversor**:
+
+    El programa te mostrará un menú con las opciones disponibles para convertir entre diferentes monedas. Solo debes ingresar el número de la opción que desees y luego ingresar la cantidad que quieres convertir.
+
+## Ejemplo de uso
+
+Al ejecutar el programa, verás un menú como el siguiente:
+
+
 
 ## Uso
 1. Al iniciar el programa, se mostrará un menú con las opciones de conversión disponibles.
@@ -64,31 +71,55 @@ Se encarga de realizar las solicitudes a la API externa para obtener las tasas d
   Sea bienvenido/a al Conversor de Moneda =]
 *********************************************
 
-1) Dólar => Peso argentino
-2) Peso argentino => Dólar
-3) Dólar => Real brasileño
-4) Real brasileño => Dólar
+1) Dólar => Peso Chileno
+2) Peso Chileno => Dólar
+3) Dólar => Real Argentino
+4) Real Argentino => Dólar
 5) Dólar => Peso colombiano
 6) Peso colombiano => Dólar
 7) Salir
 
-Elija una opción válida:
-*********************************************
-Ingrese la cantidad a convertir: 100
-Tasa de cambio: 1 USD = 350.00 ARS
-Cantidad convertida: 35000.00 ARS
-```
+
+### Ejemplo de conversión
+
+Si eliges la opción "1) Dólar => Peso Chileno" e ingresas una cantidad de **1000**, el programa te mostrará algo como:
+
+
 
 ## Notas
 - La precisión de las tasas de cambio depende de la API utilizada.
 - Asegúrate de manejar posibles excepciones en caso de problemas con la conexión a la API.
 
+
 ## Contribuciones
-Si deseas contribuir a este proyecto:
-1. Realiza un fork del repositorio.
-2. Crea una rama nueva para tus cambios:
-   ```bash
-   git checkout -b feature/nueva-funcionalidad
+
+Si deseas contribuir a este proyecto, puedes hacerlo de la siguiente manera:
+
+1. **Haz un fork** del repositorio.
+2. **Crea una rama** con tus cambios:
+
+    ```bash
+    git checkout -b mi-nueva-funcionalidad
+    ```
+
+3. **Haz commit de tus cambios**:
+
+    ```bash
+    git commit -m "Agregado nueva funcionalidad"
+    ```
+
+4. **Sube tus cambios** al repositorio:
+
+    ```bash
+    git push origin mi-nueva-funcionalidad
+    ```
+
+5. **Crea un Pull Request**.
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
+
    ```
 3. Envía un pull request con una descripción detallada de los cambios realizados.
 
@@ -96,13 +127,3 @@ Si deseas contribuir a este proyecto:
 Este proyecto se distribuye bajo la licencia MIT. Puedes usarlo, modificarlo y distribuirlo libremente.
 
 ---
-**Desarrollado con ❤ en Java.**
-
-=======
-# conversor_de_moneda
-Conversor de monedas de Alura
->>>>>>> f12f5083c605f58dbeefa2e568cd81d0613d2926
-=======
-# conversor_de_moneda
-Conversor de monedas de Alura
->>>>>>> f12f5083c605f58dbeefa2e568cd81d0613d2926
